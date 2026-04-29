@@ -117,6 +117,7 @@ header .navbar {
     font-weight: var(--font-weight-medium);
     border-radius: var(--border-radius-xs);
     background-color: var(--secondary-color);
+    white-space: nowrap;
 }
 
 .hire-button:hover {
@@ -332,7 +333,7 @@ body {
 
 /*About styles*/
 .about {
-    background: #0a0a0a;
+    background: var(--primary-color);
     padding: 100px 20px;
 }
 
@@ -368,6 +369,65 @@ body {
 
 .resume-button:hover {
     background: var(--hover-secondary-color);
+}
+
+/*Ready to start a conversation styles*/
+
+.startconvo-section {
+    background-color: var(--secondary-color);
+    padding: 30px 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.startconvo-container {
+    max-width: 800px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+}
+
+.startconvo-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+}
+
+.startconvo-text, 
+.startconvo-subtext {
+    color: var(--primary-color);
+   
+}
+
+.startconvo-text {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+}
+
+.startconvo-subtext {
+    font-size: .8rem;
+    font-weight: var(--font-weight-normal);
+    opacity: 0.8;
+}
+
+.startconvo-button {
+    color: var(--secondary-color);
+    font-size: var(--font-size-xs);
+    background-color: var(--primary-color);
+    padding: 10px 16px;
+    white-space: nowrap;
+    border-radius: var(--border-radius-xs);
+}
+
+.startconvo-button:hover {
+    opacity: 0.9;
 }
 
 /*Responsive*/
@@ -490,4 +550,47 @@ body {
         .skill-container .skill-ul {
         grid-template-columns: 1fr;
     }
+}
+
+
+
+
+/* ------------------------------------------------------------404 PAGE------------------------------------------------------------------ */
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.error-container {
+    max-width: 500px;
+}
+
+.error-code {
+    font-size: 6rem;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-black);
+}
+
+.error-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.error-text {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+}
+
+.error-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-xs);
+    font-weight: var(--font-weight-medium);
 }
