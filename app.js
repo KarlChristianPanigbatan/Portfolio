@@ -26,3 +26,28 @@ document.querySelectorAll(".nav-link").forEach(link => {
     });
 
 });
+
+const readyPages = [
+    "index.html",
+    "contact.html",
+    "tech.html"
+];
+
+document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.addEventListener("click", function (e) {
+
+        const href = this.getAttribute("href");
+
+        // ignore PDFs and external links
+        if (!href.endsWith(".html")) return;
+
+        // if page is not ready → coming soon
+        if (!readyPages.includes(href)) {
+            e.preventDefault();
+            window.location.href = "coming-soon.html";
+        }
+
+    });
+
+});
