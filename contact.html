@@ -9,6 +9,171 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+        <header>
+    <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">Karl Christian</h2>
+            </a>
+
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu"> 
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coming-soon.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coming-soon.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pdf/Karl_Christian_Panigbatan.pdf" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coming-soon.html" class="hire-button">Hire Me</a>
+                </li>
+            </ul>    
+    </nav>
+</header>
+
+
+<section class="contact-section">
+
+    <div class="contact-page">
+
+        <!-- HEADER -->
+        <div class="contact-headers">
+            <h1 class="contact-head">Let's Talk</h1>
+            <p class="contact-subhead">
+                Have a project in mind, want to collaborate, or just say hello? I'd love to hear from you.
+            </p>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="contact-content">
+
+            <!-- LEFT SIDE -->
+            <div class="contact-left">
+
+                <h2 class="contact-find">FIND ME ONLINE</h2>
+
+                <div class="socials">
+
+    <div class="social-card">
+        <i class="fab fa-facebook-f"></i>
+        <div>
+            <h3>Facebook</h3>
+            <p>facebook.com/AkoSiChril</p>
+        </div>
+    </div>
+
+    <div class="social-card">
+        <i class="fab fa-linkedin-in"></i>
+        <div>
+            <h3>LinkedIn</h3>
+            <p>www.linkedin.com/in/karl-christian-panigbatan-825070314/</p>
+        </div>
+    </div>
+
+    <div class="social-card">
+        <i class="fas fa-envelope"></i>
+        <div>
+            <h3>Email</h3>
+            <p>karlpanigbatan31@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="social-card">
+        <i class="fas fa-globe"></i>
+        <div>
+            <h3>Website</h3>
+            <p>karlchristianpanigbatan.github.io/Portfolio/index.html</p>
+        </div>
+    </div>
+
+    <div class="availability-card">
+
+    <div class="availability-header">
+        <h3>Currently Available</h3>
+    </div>
+
+    <p class="availability-subtext">
+        Open for freelance projects, collaborations, and full-time opportunities.
+    </p>
+
+</div>
+
+</div>
+</div>
+
+            <!-- RIGHT SIDE -->
+            <div class="contact-right">
+
+    <h2 class="contact-form-title">SEND A MESSAGE</h2>
+
+    <form class="contact-form">
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="you@example.com">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <select>
+                <option value="" disabled selected>Select a topic...</option>
+                <option>Freelance</option>
+                <option>Job Offer</option>
+                <option>Just Saying Hello</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project..." rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">
+        <i class="fas fa-paper-plane"></i>
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+const menuToggle = document.getElementById("mobile-menu");
+const navMenu = document.querySelector(".nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
 </body>
 </html>

@@ -430,7 +430,241 @@ body {
     opacity: 0.9;
 }
 
-/*Responsive*/
+/*=================================================Contact Page==============================================*/
+
+.contact-section {
+    padding: 100px 20px;
+    background: var(--primary-color);
+}
+
+.contact-page {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.contact-head {
+    font-size: var(--font-size-xxl);
+    margin-bottom: -10px;
+}
+
+.contact-subhead {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    max-width: 500px;
+}
+
+/* LAYOUT */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.contact-find,
+.contact-form-title {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+}
+
+/*LEFT*/
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #17182454;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.social-card i {
+    font-size: 12px;
+    color: var(--white-color);
+    background: #24253354;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.social-card h3 {
+    font-size: 0.8rem;
+    margin-bottom: -3px;
+}
+
+.social-card p {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.6);
+}
+
+.social-card:hover {
+    border-color: #ffae006b;
+    background-color: #ffae0015;
+    transform: translateY(-2px);
+}
+
+.availability-card {
+    margin-top: 20px;
+    padding: 16px;
+
+    background: #ffae0015;
+    border: 1px solid #ffae006b;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.availability-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.availability-card h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.availability-subtext {
+    margin-top: 8px;
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+}
+
+/* RIGHT */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+/*Dropdown customize*/
+.contact-form select {
+    width: 100%;
+
+    background: #24253354;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding: 10px 12px;
+    border-radius: 6px;
+
+    font-size: 0.75rem;
+    color: var(--white-color);
+
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    transition: 0.25s ease;
+}
+
+.contact-form select option {
+    background-color: #11131a;
+    color: var(--white-color);
+}
+
+.contact-form select:hover,
+.contact-form select:focus {
+    border-color: #ffae006b;
+    background-color: #ffae0015;
+    outline: none;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background: #17182454;
+    border: 1px solid #222;
+    padding: 8px 8px;
+    color: white;
+    border-radius: 6px;
+}
+
+.send-btn i {
+    font-size: 0.75rem;
+    color: #000;
+    line-height: 1;
+}
+
+.send-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+
+    white-space: nowrap;
+    width: fit-content;
+
+    padding: 0px 11px 0px 0px;
+
+    font-size: 0.7rem;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-xs);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: var(--hover-secondary-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+/*================================================Responsive index===============================================*/
 
 @media (max-width: 1024px) {
 
@@ -551,6 +785,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 /* ------------------------------------------------------------COMING SOON PAGE------------------------------------------------------------------ */
