@@ -225,7 +225,14 @@ body {
 .landing-button {
     display: flex;
     margin-top: 10px;
+    gap: 7px;
 }
+
+.gallery-button,
+.contact-button {
+    font-size: 0.8rem; /* adjust this value */
+}
+
 .gallery-button {
     color: var(--primary-color);
     font-weight: var(--font-weight-medium);
@@ -245,7 +252,6 @@ body {
     padding: 10px 17px;
     border-radius: var(--border-radius-xs);
     border: .5px solid #ffffff67;
-    margin-left: 7px;
 }
 
 .contact-button:hover{
