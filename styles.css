@@ -669,6 +669,93 @@ body {
     }
 }
 
+/*=================================================PROJECT PAGE=====================================================*/
+
+.projects {
+    padding: 100px 20px;
+    max-width: var(--site-max-width);
+    margin: auto;
+}
+
+.projects h1 {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+
+.projects-intro {
+    font-size: var(--font-size-s);
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+/* Section titles */
+.projects h2 {
+    font-size: var(--font-size-l);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.project-card {
+    background: #17182454; /* matches your skill/contact cards */
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--border-radius-s);
+    padding: 15px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffae006b;
+    background-color: #ffae0015;
+}
+
+/* IMAGE */
+.project-card img {
+    width: 100%;
+    border-radius: var(--border-radius-xs);
+    margin-bottom: 10px;
+}
+
+/* TITLE */
+.project-card h3 {
+    font-size: var(--font-size-m);
+    margin-bottom: 5px;
+    color: var(--white-color);
+}
+
+/* DESCRIPTION */
+.project-card p {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.4;
+}
+
+/* LINK */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.project-card a:hover {
+    opacity: 0.8;
+}
 
 /*================================================Responsive index===============================================*/
 
