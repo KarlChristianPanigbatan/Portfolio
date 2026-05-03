@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Christian — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <h2 class="logo-text">Karl Christian</h2>
+        </a>
+
+        <ul class="nav-menu"> 
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>    
+    </nav>
+</header>
+
+<section class="gallery">
+
+    <h1>Gallery</h1>
+    <p class="gallery-intro">
+        A collection of my design, editing, and creative work.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/joker.png" alt="Joker Edit" class="gallery-img" data-image="images/Photo-manipulation/joker.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Photo Manipulation</p>
+                <p class="desc">A Halloween Joker edit with face paint, color effects, and a dark brick background for an eerie look.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/Fight.png" alt="Fight Scene" class="gallery-img" data-image="images/Photo-manipulation/Fight.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Photo Manipulation</p>
+                <p class="desc">Action-based cinematic composition with dynamic lighting.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/fairy.png" alt="Fairy Edit" class="gallery-img" data-image="images/Photo-manipulation/fairy.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Photo Manipulation</p>
+                <p class="desc">A fairy-themed debut photoshoot enhanced with glowing wings and a magical woodland effect.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/fairy (2).png" alt="Fairy Edit" class="gallery-img" data-image="images/Photo-manipulation/fairy (2).png">
+
+            <div class="gallery-overlay">
+                <p class="category">Photo Manipulation</p>
+                <p class="desc">A fairy-themed debut photoshoot enhanced with glowing wings and a magical woodland effect.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Product-ads/Match-Day-Curated.png" alt="Match Day Ad" class="gallery-img" data-image="images/Product-ads/Match-Day-Curated.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Product Ads</p>
+                <p class="desc">Sports-themed promotional poster with bold typography.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Product-ads/Retro-Style-With-Modern-Twist.png" alt="Retro Ad" class="gallery-img" data-image="images/Product-ads/Retro-Style-With-Modern-Twist.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Product Ads</p>
+                <p class="desc">Vintage-inspired design mixed with modern layout elements.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Socmed-Post-FinalThirdFC/Ronaldinho-Free-Soul.png" alt="Socmed Post" class="gallery-img" data-image="images/Socmed-Post-FinalThirdFC/Ronaldinho-Free-Soul.png">
+
+            <div class="gallery-overlay">
+                <p class="category">Socmed Post</p>
+                <p class="desc">Football-themed creative post design for engagement content.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+</div>
+
+
+<script>
+const menuToggle = document.getElementById("mobile-menu");
+const navMenu = document.querySelector(".nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
+
+<script src="app.js" defer></script>
+</body>
+</html>

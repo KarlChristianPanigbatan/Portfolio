@@ -757,6 +757,160 @@ body {
     opacity: 0.8;
 }
 
+
+/*======================================= GALLERY PAGE========================================================== */
+.gallery {
+    padding: 80px 20px;
+    max-width: calc(var(--site-max-width) * 0.7);
+    margin: auto;
+}
+
+.gallery h1 {
+    font-size: calc(var(--font-size-xxl) * 0.85);
+    margin-bottom: 10px;
+}
+
+.gallery-intro {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* Pinterest-style columns */
+.gallery-grid {
+    column-count: 4;
+    column-gap: 12px;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .gallery-grid { column-count: 3; }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid { column-count: 2; }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid { column-count: 1; }
+}
+
+/* ITEM CARD */
+.gallery-item {
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 12px;
+
+    background: #17182454;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--border-radius-s);
+    overflow: hidden;
+
+    transition: 0.25s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    border-color: #ffae006b;
+    background-color: #ffae0015;
+}
+
+/* IMAGE (no crop, natural size) */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================= OVERLAY ================= */
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 12px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0)
+    );
+
+    transform: translateY(100%);
+    transition: 0.3s ease;
+
+    color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* CATEGORY */
+.gallery-overlay .category {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 0.65rem;
+    color: var(--secondary-color);
+
+    background-color: #ffae0020;
+    border: 0.5px solid #ffae006b;
+
+    padding: 1px 5px;
+    border-radius: 999px;
+
+    width: fit-content;
+    backdrop-filter: blur(6px);
+}
+
+/* DESCRIPTION */
+.gallery-overlay .desc {
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.3;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+}
+
+.lightbox-img {
+    max-width: 40vw;
+    max-height: 70vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 /*================================================Responsive index===============================================*/
 
 @media (max-width: 1024px) {
