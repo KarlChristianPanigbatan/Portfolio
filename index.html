@@ -1,152 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karl Christian — Portfolio</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+<!-- ================= NAVBAR ================= -->
+<header>
     <nav class="navbar">
-            <a href="index.html" class="nav-logo">
-                <h2 class="logo-text">Karl Christian</h2>
-            </a>
 
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+        <h2 class="logo-text">Karl Christian</h2>
 
-            <ul class="nav-menu"> 
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="gallery.html" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="pdf/Karl_Christian_Panigbatan.pdf" target="_blank" class="nav-link">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="coming-soon.html" class="hire-button">Hire Me</a>
-                </li>
-            </ul>    
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <a href="pdf/Karl_Christian_Panigbatan.pdf" target="_blank" class="hire-button">
+                    Resume
+                </a>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
 
-<div class="hero">
 
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
     <div class="hero-text">
+
         <div class="status">
-    <span class="status-dot">•</span>
-    <span class="status-text">AVAILABLE FOR FREELANCE</span>
-</div>
-        <div class="landing-name">
-            <span class="landing-name1">Karl Christian</span>
-            <span class="landing-name2">Panigbatan</span>
-    
+            <span>●</span>
+            AVAILABLE FOR FREELANCE
         </div>
 
-                <div class="sub">Developer & designer creating clean,<br>modern digital experiences.</div>
-
-            <div class="landing-button">
-                <a href="coming-soon.html" class="gallery-button">View Gallery →</a>
-                    <a href="contact.html" class="contact-button">Get in touch</a>
-                        </div>
-</div>
- <div class="landing-pic">
-            <img src="images/CHN_4213.JPG" class="image"></img>
+        <div>
+            <div class="landing-name1">Karl Christian</div>
+            <div class="landing-name2">Panigbatan</div>
         </div>
-</div>
 
-<section class="skill">
-        <div class="skill-container">
-            <ul class="skill-ul">
-
-    <li>
-        <i class="fas">&#xf121;</i>
-        <h3>2+ Years</h3>
-        <p>Creative & Coding</p>
-    </li>
-
-    <li>
-        <i class="fas">&#xf115;</i>
-        <h3>50+ Projects</h3>
-        <p>Built, Edited & Delivered</p>
-    </li>
-
-    <li>
-        <i class="fas">&#xf522;</i>
-        <h3>Multi-Skilled</h3>
-        <p>Creative & Tech Hybrid</p>
-    </li>
-
-    <li>
-        <i class="fas fa-earth-asia"></i>
-        <h3>Remote Ready</h3>
-        <p>VA & Client Support</p>
-    </li>
-
-</ul>
-            
+        <div class="sub">
+            Developer & Designer creating clean, modern digital experiences.
         </div>
+
+        <div class="landing-button">
+            <a href="#projects" class="gallery-button">View Projects →</a>
+            <a href="#contact" class="contact-button">Get in touch</a>
+        </div>
+
+    </div>
+
+    <div class="landing-pic">
+        <img src="images/CHN_4213.JPG" alt="profile">
+    </div>
+
 </section>
 
-<section class="about">
+<!-- ================= SKILLS ================= -->
+<section class="skill" id="skills">
+
+    <ul class="skill-ul">
+
+        <li>
+            <i class="fas fa-code"></i>
+            <h3>Web Dev</h3>
+            <p>Laravel, PHP, JS Systems</p>
+        </li>
+
+        <li>
+            <i class="fas fa-pen-nib"></i>
+            <h3>Design</h3>
+            <p>UI, Photoshop, Canva</p>
+        </li>
+
+        <li>
+            <i class="fas fa-video"></i>
+            <h3>Editing</h3>
+            <p>Photo & Video Content</p>
+        </li>
+
+        <li>
+            <i class="fas fa-laptop"></i>
+            <h3>Tech Support</h3>
+            <p>VA & Remote Work</p>
+        </li>
+
+    </ul>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
 
     <div class="about-container">
 
         <h2 class="about-title">About Me</h2>
 
-            <p class="about-summary">Skilled in Python, Java, and C++ with experience in video/photo editing, web development, technical support, 
-                and virtual assistance. Proven ability to manage tasks efficiently, support clients remotely, and adapt to fast-paced digital environments. 
-                A creative problem-solver with strong attention to detail, capable of delivering both technical solutions and engaging digital content.</p>
+        <p class="about-summary">
+            A Computer Science graduate with experience in web development, UI design, video & photo editing, 
+            and system development. I specialize in building clean, user-focused digital solutions and 
+            solving technical problems through creative and efficient approaches.
+        </p>
 
-                <a href="pdf/Karl_Christian_Panigbatan.pdf" class="resume-button" target="blank" rel="noopener">View Resume →</a>
+        <a href="pdf/Karl_Christian_Panigbatan.pdf" class="resume-button" target="_blank">
+            View Resume
+        </a>
+
     </div>
 
 </section>
 
-<section class="startconvo-section">
-    <div class="startconvo-container">
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
 
-        <div class="startconvo-left">
-            <p class="startconvo-text">Ready to build something great?</p>
-            <p class="startconvo-subtext">
-                Open to full-time roles and selected freelance projects
-            </p>
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>DeepLabV3+ Enhanced Reinforcement Learning</h3>
+            <p>Improving AI segmentation for enhanced visual understanding.</p>
+            <a href="pdf/Manuscript.pdf" class="project-link">View Project</a>
         </div>
 
-        <a href="contact.html" class="startconvo-button">
+        <div class="project-card">
+            <h3>DIY Radar System</h3>
+            <p>As part of a collaborative project, We developed a radar system case study. The primary function of this system is to detect nearby objects and accurately display their distances.</p>
+            <a href="pdf/Radar system.pdf" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Hydroponic Simulation App</h3>
+            <p>We are embarking on a case study project to simulate a hydroponic system within our program. This simulation will include features such as day/night cycles, bug removal, harvesting, nutrient addition, and more.</p>
+            <a href="pdf/Hydrophonics.pdf" class="project-link">View Project</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery" id="gallery">
+
+    <h2>Creative Gallery</h2>
+    <p class="gallery-intro">Photo manipulation, UI designs, and creative edits.</p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/joker.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/fairy.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/fairy (2).png">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/Photo-manipulation/Fight.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Product-ads/Retro-Style-With-Modern-Twist.png">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/Socmed-Post-FinalThirdFC/Rare-Standard.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Product-ads/Match-Day-Curated.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Systems & UI/Screenshot 2026-05-21 103820.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Product-ads/premium-daily-boost.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Socmed-Post-FinalThirdFC/2-Era-1-Language.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Socmed-Post-FinalThirdFC/Ronaldinho-Free-Soul.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Socmed-Post-FinalThirdFC/Where-Football meets-style.png">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/Systems & UI/UI_Hydrophonic (5).png">
+        </div>
+
+                <div class="gallery-item">
+            <img src="images/Product-ads/Heritage&Style-Combined.png">
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-page">
+
+        <h2 class="contact-head">Let’s Work Together</h2>
+
+        <p class="contact-subhead">
+            Open for freelance, internships, and development projects.
+        </p>
+
+        <div class="contact-content">
+
+            <div>
+                <p class="contact-find">SOCIALS</p>
+
+                <div class="social-card">
+                    <i class="fab fa-facebook"></i>
+                    <div>
+                        <h3>Facebook</h3>
+                        <p>Message me anytime</p>
+                    </div>
+                </div>
+
+                <div class="social-card">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>My coding projects</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your email">
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your message"></textarea>
+                </div>
+
+                <button class="send-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="startconvo-section">
+
+    <div class="startconvo-container">
+
+        <div>
+            <div class="startconvo-text">
+                Ready to build something great?
+            </div>
+            <div class="startconvo-subtext">
+                Open for full-time and freelance opportunities
+            </div>
+        </div>
+
+        <a href="#contact" class="startconvo-button">
             Start Conversation →
         </a>
 
     </div>
+
 </section>
 
-
-
-<script>
-const menuToggle = document.getElementById("mobile-menu");
-const navMenu = document.querySelector(".nav-menu");
-
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-</script>
 </body>
+</html>
