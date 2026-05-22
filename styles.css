@@ -149,6 +149,17 @@ header {
     color: var(--accent);
 }
 
+.status span {
+    color: var(--accent);
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
 .landing-name1,
 .landing-name2 {
     font-size: clamp(2rem, 6vw, 4rem);
@@ -299,12 +310,145 @@ header {
     border-radius: var(--radius-sm);
 }
 
-/* ================= CONTACT ================= */
+/* ================= CONTACT SECTION ================= */
+
 .contact-section {
     padding: 100px 8%;
+    background: rgba(255,255,255,0.01);
 }
 
-/* keep your existing contact styles (already good) */
+.contact-page {
+    max-width: var(--container);
+    margin: auto;
+}
+
+.contact-head {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.contact-subhead {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+/* layout */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* ================= SOCIAL CARDS ================= */
+
+.contact-find {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 14px;
+    border-radius: var(--radius-sm);
+
+    margin-bottom: 12px;
+    transition: 0.25s;
+}
+
+.social-card i {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.social-card h3 {
+    font-size: 0.95rem;
+}
+
+.social-card p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.social-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 174, 0, 0.4);
+}
+
+/* ================= FORM ================= */
+
+.contact-form {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: var(--radius-md);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.03);
+    color: var(--text);
+    outline: none;
+    transition: 0.25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.05);
+}
+
+/* ================= BUTTON ================= */
+
+.send-btn {
+    padding: 12px 16px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.send-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* ================= PROJECTS ================= */
 .projects {
@@ -357,6 +501,10 @@ header {
     padding: 80px 8%;
     max-width: var(--container);
     margin: auto;
+}
+
+.gallery p {
+    color: var(--text-muted);
 }
 
 .gallery-grid {
