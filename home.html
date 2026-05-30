@@ -19,6 +19,12 @@
 
         <h2 class="logo-text">Karl Christian</h2>
 
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         <ul class="nav-menu">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
@@ -161,7 +167,7 @@
     <div class="gallery-grid">
 
         <div class="gallery-item">
-            <img src="images/Photo-manipulation/joker.png">
+            <img class="gallery-img" src="images/Photo-manipulation/joker.png" data-image="images/Photo-manipulation/joker.png">
         </div>
 
         <div class="gallery-item">
@@ -264,24 +270,24 @@
 
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" id="contact-form">
 
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text" placeholder="Your name">
+                    <input type="text" name="name" placeholder="Your name">
                 </div>
 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" placeholder="Your email">
+                    <input type="email" name="email" placeholder="Your email">
                 </div>
 
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea rows="5" placeholder="Your message"></textarea>
+                    <textarea rows="5" name="message" placeholder="Your message"></textarea>
                 </div>
 
-                <button class="send-btn">
+                <button type="submit" class="send-btn">
                     Send Message
                 </button>
 
@@ -312,6 +318,13 @@
 
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="app.js"></script>
+<div id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img">
+</div>
 
 </body>
 </html>
